@@ -28,7 +28,6 @@ function buildStyles() {
 
 const watchBuild = () => {
   return watch(['*.html', '**/**/*.scss'], { events: 'all' }, (cb) => {
-    console.log('here')
     return buildHTML(), buildStyles()
   })
 }
